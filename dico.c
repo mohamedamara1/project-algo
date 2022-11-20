@@ -109,7 +109,7 @@ int dicoNbMotsTotal(TArbre a)
     }    
     else
     { 
-       return (dicoNbMotsTotal(a->left) + dicoNbMotsTotal(a->right) + 1);
+       return (dicoNbMotsTotal(a->filsGauche) + dicoNbMotsTotal(a->filsDroit) + 1);
     }
 }
 /* ------------------------------------------------------- */
