@@ -32,6 +32,8 @@ int arbreRacineNbOcc(TArbre a){
   return a->nbOcc;
 }
 
+
+
 TArbre arbreFilsGauche(TArbre a){
   return a->fg;
 }
@@ -99,8 +101,17 @@ int dicoNbOcc(char mot[], TArbre a)
   return _dicoNbOcc(mot, 0, a);
 }
 
-
-
+int dicoNbMotsTotal(TArbre a)
+{
+    if (arbreEstVide(a))
+    {
+	return 0;
+    }    
+    else
+    { 
+       return (dicoNbMotsTotal(a->left) + dicoNbMotsTotal(a->right) + 1);
+    }
+}
 /* ------------------------------------------------------- */
 /* Ent�tes des fonctions locales � cette biblioth�que      */
 /* ------------------------------------------------------- */
