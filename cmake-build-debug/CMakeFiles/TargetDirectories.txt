@@ -1,0 +1,3 @@
+C:/Users/Mega-PC/Documents/9raya/algo/new_proj/cmake-build-debug/CMakeFiles/new_proj.dir
+C:/Users/Mega-PC/Documents/9raya/algo/new_proj/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Mega-PC/Documents/9raya/algo/new_proj/cmake-build-debug/CMakeFiles/rebuild_cache.dir

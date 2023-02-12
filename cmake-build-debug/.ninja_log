@@ -1,0 +1,11 @@
+# ninja log v5
+2	77	6978949326135126	CMakeFiles/new_proj.dir/arbre.c.obj	d506069c19b4f351
+2	117	6979039232808545	CMakeFiles/new_proj.dir/dico.c.obj	8e1b9d5cd6303268
+66	148	6979040985676578	new_proj.exe	bc39e43c36cee6a7
+5	67	6979032536979453	CMakeFiles/new_proj.dir/arbreGraphics.c.obj	1e5b027fb803ceb6
+1	183	6979061668869130	build.ninja	19e01a8e81da0d62
+2	66	6979040984880460	CMakeFiles/new_proj.dir/arbreTerminalPrint.c.obj	b35721f3aea449ff
+9	120	6979062185619469	CMakeFiles/new_proj.dir/arbreTerminalPrint.c.obj	b35721f3aea449ff
+5	121	6979062185619469	CMakeFiles/new_proj.dir/main.c.obj	54f38e52c0d4bd69
+2	140	6979062185834683	CMakeFiles/new_proj.dir/dico.c.obj	8e1b9d5cd6303268
+140	324	6979062187229216	new_proj.exe	c897f896f1dee244
