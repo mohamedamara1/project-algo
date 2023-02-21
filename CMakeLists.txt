@@ -12,4 +12,4 @@ add_executable(new_proj
         dico.h
         arbreTerminalPrint.c
         arbreTerminalPrint.h
-        main.c)
+        main.c arbreAfficherVertical.h arbreAfficherVertical.c)

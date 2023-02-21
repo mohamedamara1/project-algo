@@ -77,6 +77,13 @@ build CMakeFiles/new_proj.dir/main.c.obj: C_COMPILER__new_proj_Debug C$:/Users/M
   OBJECT_DIR = CMakeFiles\new_proj.dir
   OBJECT_FILE_DIR = CMakeFiles\new_proj.dir
 
+build CMakeFiles/new_proj.dir/arbreAfficherVertical.c.obj: C_COMPILER__new_proj_Debug C$:/Users/Mega-PC/Documents/9raya/algo/new_proj/arbreAfficherVertical.c || cmake_object_order_depends_target_new_proj
+  DEP_FILE = CMakeFiles\new_proj.dir\arbreAfficherVertical.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu11
+  INCLUDES = -IC:/Users/Mega-PC/Documents/9raya/algo/new_proj/.
+  OBJECT_DIR = CMakeFiles\new_proj.dir
+  OBJECT_FILE_DIR = CMakeFiles\new_proj.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target new_proj
@@ -85,7 +92,7 @@ build CMakeFiles/new_proj.dir/main.c.obj: C_COMPILER__new_proj_Debug C$:/Users/M
 #############################################
 # Link the executable new_proj.exe
 
-build new_proj.exe: C_EXECUTABLE_LINKER__new_proj_Debug CMakeFiles/new_proj.dir/arbre.c.obj CMakeFiles/new_proj.dir/dico.c.obj CMakeFiles/new_proj.dir/arbreTerminalPrint.c.obj CMakeFiles/new_proj.dir/main.c.obj
+build new_proj.exe: C_EXECUTABLE_LINKER__new_proj_Debug CMakeFiles/new_proj.dir/arbre.c.obj CMakeFiles/new_proj.dir/dico.c.obj CMakeFiles/new_proj.dir/arbreTerminalPrint.c.obj CMakeFiles/new_proj.dir/main.c.obj CMakeFiles/new_proj.dir/arbreAfficherVertical.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\new_proj.dir
