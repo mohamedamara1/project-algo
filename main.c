@@ -1,6 +1,7 @@
 
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 #include "dico.h"
 #include "arbreTerminalPrint.h"
 #include "arbreAfficherVertical.h"
@@ -20,6 +21,7 @@ int main(){
         printf("4 - Print number of different words in dictionary\n");
         printf("5 - Print total number of words\n");
         printf("6 - Print number of occurrences of a given word by you\n");
+
         if (scanf("%d", &choice) != 1) { // Check if input is valid
             printf("Invalid input. Please try again.\n");
             while (getchar() != '\n'); // Clear input buffer
@@ -80,6 +82,7 @@ int main(){
                 break;
             default :
                 printf("No chosen number\n");
+                exit(0);
         }
     }
     printf("You chose option number %d\n", choice);
