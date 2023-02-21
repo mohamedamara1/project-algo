@@ -14,8 +14,8 @@ int main(){
 
     while (choice != 0){
         printf("Welcome user, please choose a number to proceed\n");
-        printf("1 - Create dictionary from text file\n");
-        printf("2 - Create dictionary from user input\n");
+        printf("1 - Add words from text file\n");
+        printf("2 - Add words from user input\n");
         printf("3 - Print dictionary\n");
         printf("4 - Print number of different words in dictionary\n");
         printf("5 - Print total number of words\n");
@@ -28,7 +28,18 @@ int main(){
 
         switch(choice){
             case 1 :
-                printf("Creating dictionary from text file\nEnter text file name\n");
+                printf("Creating dictionary from text file\n");
+                int numberOfWordsToSelect=0;
+                printf("Enter the number of words that you want to pick from the text file\n");
+                getchar();
+                scanf("%d", &numberOfWordsToSelect);
+                char wordToInsert[100] = {0};
+                printf("These are the words I picked for you\n");
+                for( int i =0; i < numberOfWordsToSelect; i++ ){
+                    piocherMot(wordToInsert);
+                    dicoInsererMot(wordToInsert, &dico);
+                    printf("Word number %d : %s\n", i+1, wordToInsert);
+                }
                 break;
             case 2 :
                 printf("Creating dictionary from strings entered by the user \nPress q to stop inserting\n");
@@ -48,7 +59,6 @@ int main(){
                     dicoInsererMot(buffer,  &dico);
                 }
                 break;
-
             case 3:
                 printf("Printing dictionary\n");
                 print2D(dico);
@@ -73,7 +83,5 @@ int main(){
         }
     }
     printf("You chose option number %d\n", choice);
-
-
     return 0;
 }

@@ -157,8 +157,6 @@ int piocherMot(char *motPioche)
         // À la lecture du return, la fonction s'arrête immédiatement.
     }
 
-
-
     // On compte le nombre de mots dans le fichier (il suffit de compter les
 
     // entrées \n
@@ -174,8 +172,6 @@ int piocherMot(char *motPioche)
     } while(caractereLu != EOF);
 
     numMotChoisi = nombreAleatoire(nombreMots); // On pioche un mot au hasard
-
-
 
     // On recommence à lire le fichier depuis le début. On s'arrête lorsqu'on est arrivé au bon mot
 
@@ -207,8 +203,12 @@ int piocherMot(char *motPioche)
 
 int nombreAleatoire(int nombreMax)
 {
-    srand(time(NULL));
-    return (rand() % nombreMax);
+    static int initialized = 0;
+    if (!initialized) {
+        srand(time(NULL));
+        initialized = 1;
+    }
+    return rand() % nombreMax;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
